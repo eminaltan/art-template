@@ -8,7 +8,12 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 2.5rem;
 
-  .navbar {
+  .navbar,
+  .header-section {
     grid-column: 1 / span 12;
+  }
+
+  .card {
+    grid-column: 2 / span 10;
   }
 }
