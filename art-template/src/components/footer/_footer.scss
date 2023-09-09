@@ -1,0 +1,31 @@
+@use "../../base/typography" as *;
+
+footer {
+  text-align: center;
+  form {
+    @extend .heading_15px_bold;
+
+    input {
+      width: 100%;
+      padding: 0.5333333333333333em;
+      margin: 1.0666666666666667em;
+      border: 1px solid #cccccc;
+      padding: 0.5333333333333333em 0.9375em;
+
+      &[type="submit"] {
+        background-color: hsl(0, 0%, 38%);
+        color: hsl(0, 0%, 100%);
+
+        &:hover {
+          background-color: hsl(0, 0%, 80%);
+          color: hsl(0, 0%, 0%);
+        }
+      }
+    }
+  }
+
+  p {
+    @extend .heading_15px;
+    margin: 0.9375em 0;
+  }
+}
