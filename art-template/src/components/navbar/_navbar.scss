@@ -1,0 +1,21 @@
+@use "../../base/typography" as *;
+
+.navbar {
+  @extend .heading_24px;
+  padding: 0.6666666666666666em 1em;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: hsl(0, 0%, 0%);
+      padding: 0.3333333333333333em 0.6666666666666666em;
+      &:hover {
+        background-color: hsl(0, 0%, 80%);
+      }
+    }
+  }
+}
