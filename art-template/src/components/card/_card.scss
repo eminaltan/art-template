@@ -1,0 +1,30 @@
+@use "../../base/typography" as *;
+
+.card {
+  text-align: center;
+  &__top {
+    h2 {
+      @extend .segoe_30px;
+      margin: 0.3333333333333333em 0;
+    }
+    img {
+      box-sizing: initial;
+      width: 300px;
+      max-width: 100%;
+      padding: 2em;
+    }
+  }
+
+  &__bottom {
+    :first-child {
+      @extend .heading_15px;
+      margin: 1em 0;
+    }
+
+    :last-child {
+      @extend .heading_18px;
+      margin: 1em 0;
+      color: hsl(340, 82%, 52%);
+    }
+  }
+}
