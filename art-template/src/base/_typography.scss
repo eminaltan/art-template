@@ -7,8 +7,30 @@
   font-family: "Raleway", sans-serif;
   font-style: normal;
 
+  &_15px {
+    @extend .heading;
+    font-size: 0.9375rem;
+  }
+
+  &_18px {
+    @extend .heading;
+    font-size: 1.125rem;
+  }
+
   &_24px {
     @extend .heading;
     font-size: 1.5rem;
+  }
+}
+/// Segoe UI styles. Common styles collected in main class. (For example `.segoe`) More specific classes should be place inner class section.
+/// @group Fonts
+///
+.segoe {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: normal;
+
+  &_30px {
+    @extend .segoe;
+    font-size: 1.875rem;
   }
 }
