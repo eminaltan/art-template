@@ -7,6 +7,7 @@ import NavBar from "./components/navbar/NavBar";
 import Header from "./components/header/Header";
 import Card from "./components/card/Card";
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
