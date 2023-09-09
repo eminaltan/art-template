@@ -1,0 +1,14 @@
+@use "./base/normalize";
+
+#root {
+  width: 70vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2.5rem;
+
+  .navbar {
+    grid-column: 1 / span 12;
+  }
+}

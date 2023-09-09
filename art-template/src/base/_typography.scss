@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/// Heading styles. Common styles collected in main class. (For example `.heading`) More specific classes should be place inner class section.
+/// @group Fonts
+///
+.heading {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+
+  &_24px {
+    @extend .heading;
+    font-size: 1.5rem;
+  }
+}
