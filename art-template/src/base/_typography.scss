@@ -10,6 +10,10 @@
   &_15px {
     @extend .heading;
     font-size: 0.9375rem;
+    &_bold {
+      @extend .heading_15px;
+      font-weight: 700;
+    }
   }
 
   &_18px {

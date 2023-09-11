@@ -6,7 +6,7 @@ import "./_index.scss";
 import NavBar from "./components/navbar/NavBar";
 import Header from "./components/header/Header";
 import Card from "./components/card/Card";
-
+import Footer from "./components/footer/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,6 +14,7 @@ root.render(
     <NavBar />
     <Header />
     <Card />
+    <Footer />
   </React.StrictMode>
 );
 

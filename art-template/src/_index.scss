@@ -1,4 +1,5 @@
-@use "./base/normalize";
+@use "./base/normalize" as *;
+@use "./abstracts/mixins" as *;
 
 #root {
   width: 70vw;
@@ -9,11 +10,24 @@
   gap: 2.5rem;
 
   .navbar,
-  .header-section {
+  .header-section,
+  footer {
     grid-column: 1 / span 12;
   }
 
   .card {
     grid-column: 2 / span 10;
+  }
+
+  @include devices(mobile) {
+    .header-section {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @include devices(tablet) {
+    .header-section {
+      grid-template-columns: 1fr;
+    }
   }
 }
